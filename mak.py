@@ -27,11 +27,11 @@ def create_parser():
 	c.add_argument("--no-makedirs", help="don't make intermediate dirs in `dst` path", action="store_true")
 	c.add_argument("--force-overwrite", help="overwrite existing destination file", action="store_true")
 
-	c = s.add_parser("md", help="make a dir")
-	c.set_defaults(func=on_md_cmd)
+	# c = s.add_parser("md", help="make a dir")
+	# c.set_defaults(func=on_md_cmd)
 
-	c = s.add_parser("rm", help="drop a file or dir")
-	c.set_defaults(func=on_rm_cmd)
+	# c = s.add_parser("rm", help="drop a file or dir")
+	# c.set_defaults(func=on_rm_cmd)
 
 	return p
 
